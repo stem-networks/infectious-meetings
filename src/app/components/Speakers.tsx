@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 interface Speaker {
   id: number;
@@ -15,106 +15,125 @@ interface Speaker {
 const speakersData: Speaker[] = [
   {
     id: 1,
-    image: "/images/images/Lumin_Wang.png",
-    name: "Lumin Wang",
-    institution: "University of Michigan",
-    country: "USA",
-    altText: "Lumin Wang",
+    image: "/images/images/ashraf_Elmaraghy.jpg",
+    name: "Ashraf A. Elmaraghy",
+    institution: "Ain Shams University",
+    country: "Egypt",
+    altText: "Ashraf A. Elmaraghy",
   },
   {
     id: 2,
-    image: "/images/images/Thomas_Fassler.jpg",
-    name: "Thomas Fassler",
-    institution: "Technical University of Munich",
-    country: "Germany",
-    altText: "Thomas Fassler",
+    image: "/images/images/antony_kalliath.jpg",
+    name: "Antony Kalliath",
+    institution: "Amala Institute of Medical Sciences",
+    country: "India",
+    altText: "Antony Kalliath",
   },
   {
     id: 3,
-    image: "/images/images/Muhammet_S_Toprak.png",
-    name: "Muhammet S. Toprak",
-    institution: "KTH Royal Institute of Technology",
-    country: "Sweden",
-    altText: "Muhammet S. Toprak",
+    image: "/images/images/abbas_Hajizade.jpg",
+    name: "Abbas Hajizade",
+    institution: "Imam Hossein University",
+    country: "Iran",
+    altText: "Abbas Hajizade",
   },
   {
     id: 4,
-    image: "/images/images/changquan_Lai.jpg",
-    name: "Changquan Lai",
-    institution: "Nanyang Technological University (NTU)",
-    country: "Singapore",
-    altText: "Changquan Lai",
+    image: "/images/images/zhang_xiao.webp",
+    name: "Zhang Xiao",
+    institution: "Chongqing Medical University",
+    country: "China",
+    altText: "Zhang Xiao",
   },
   {
     id: 5,
-    image: "/images/images/Ankur_Sood.jpg",
-    name: "Ankur Sood",
-    institution: "Yeungnam University",
-    country: "South Korea",
-    altText: "Ankur Sood",
+    image: "/images/images/gebeyehu_belay_gebremeskel.webp",
+    name: "Gebeyehu Belay Gebremeskel",
+    institution: "Bahir Dar University",
+    country: "Ethiopia",
+    altText: "Gebeyehu Belay Gebremeskel",
   },
   {
     id: 6,
-    image: "/images/images/Sumanta_Sahoo.jpg",
-    name: "Sumanta Sahoo",
-    institution: "Yeungnam University",
-    country: "South Korea",
-    altText: "Sumanta Sahoo",
+    image: "/images/images/qiang_he.webp",
+    name: "Qiang He",
+    institution: "Northeastern University",
+    country: "China",
+    altText: "Qiang He",
+  },
+  {
+    id: 7,
+    image: "/images/images/abdeen_mustafa_omer.webp",
+    name: "Abdeen Mustafa Omer",
+    institution: "Energy Research Institute (ERI)",
+    country: "United Kingdom",
+    altText: "Abdeen Mustafa Omer",
   },
 ];
 
 
 const Speakers = () => {
   return (
-    <div className="speakers-sections members-main-block">
-      <div className="import_wrap import-wrapping">
+    <div className="speakers-section first-design">
+      <div className="import_wrap">
         <div className="auto-container clearfix">
           <div className="row test-imp-row">
-            <div className="col-md-12 session_wrap_style1 wow fadeInUp" data-wow-delay="200ms"
-              data-wow-duration="1000ms">
-              <h2>Our <span>Speakers 2025</span></h2>
-
+            <div
+              className="col-md-12 session_wrap_style1 wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              <h2>
+                Our <span>Speakers 2025</span>
+              </h2>
             </div>
           </div>
 
-          <section className="blog">
-            {/* <!-- container Start--> */}
-            <div className="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="400">
-              <div className="col-md-12 col-12">
-                <div className="grid-main-members-gap">
-                  {speakersData.map((member, index) => (
-                    <div
-                      key={index}
-                      className={`each-member-gap ${index >= 3 ? 'member-row-gap' : ''}`}
-                    >
-                      <div className="grid-res-gap member-resp-gap">
-                        <div className="grid-res-item">
+          <div className="">
+            <div className="members-card-block">
+              <div className="row-member row">
+                {speakersData.map((speaker, index) => (
+                  <div
+                    className={`col-lg-3 col-md-6 col-sm-6 mb-4 ${index < 4
+                      ? 'members-specific-space'
+                      : 'member-spacing'
+                      }`}
+                    key={index}
+                  >
+                    <div className="card text-center p-3 border">
+                      <div className="custom-border-wrapper">
+                        <div className="image-wrapper mb-3">
                           <Image
-                            src={member.image}
-                            alt={member.name}
-                            title={member.name}
+                            src={speaker.image}
+                            alt={speaker.name}
+                            title={speaker.name}
                             width={200}
                             height={200}
                             className="rounded-circle img-fluid"
                           />
                         </div>
-                        <div className="inner-content">
-                          <h3>{member.name}</h3>
-                          <p className="members-p1 member-country">{member.country}</p>
-                          <p className="members-p1">{member.institution}</p>
-                        </div>
+                      </div>
+                      <div className="speaker-details normal-design">
+                        <h3>{speaker.name}</h3>
+                        <p>{speaker.institution}</p>
+                        <p>{speaker.country}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
-
+                  </div>
+                ))}
               </div>
             </div>
-          </section>
-
-          <div className='members-view-all-btn-block'>
-            <Link href='/speakers' title="View All" className="view-more-speakers-btn">View All</Link>
           </div>
+
+          {/* <div className="members-view-all-btn-block">
+            <Link
+              href="/committee"
+              title="View All"
+              className="view-more-speakers-btn"
+            >
+              View All
+            </Link>
+          </div> */}
         </div>
       </div>
     </div>
