@@ -11326,7 +11326,7 @@ input[text]:focus {
 }
 
 /* Loader */
-.loader-block {
+/* .loader-block {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -11351,7 +11351,7 @@ input[text]:focus {
 	100% {
 		transform: rotate(360deg);
 	}
-}
+} */
 
 /* Abstract closed Block  */
 .closed-block-abstract {
