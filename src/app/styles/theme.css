@@ -8,16 +8,16 @@ Intructions:
 3) If there is a need to do any new block for any conference website in specific, ensure to add and save the file in the style.css
  */
 :root {
-	--primary-color: #a2c1a1;
+	--primary-color: #5f9955;
 	--secondary-color: #a2c1a1;
 	--third-color: #7eadb7;
 	--fourth-color: #939393;
 	--fifth-color: #7fa77d;
-	--light-color: #eefdff;
+	--light-color: #f2faf1;
 	--preloader-color: #f9fbfe;
 	--white-color: #fff;
 	--black-color: #000;
-	--abstractfilebg-color: #7eadb7;
+	--abstractfilebg-color: #87c57cb0;
 	--offerbg-color: #37494b;
 	--contentbg-color: #737373;
 	--iconbg-color: #adadad;
@@ -74,7 +74,7 @@ a {
 
 /* header button Colors Code */
 .regs_wrap a {
-	color: var(--primary-color) !important;
+	color: var(--secondary-color) !important;
 }
 
 .june_wrap55 span {
@@ -205,7 +205,7 @@ a {
 }
 
 .banner_wrap button:hover {
-	background-color: var(--bannerhover-color);
+	background-color: var(--secondary-color);
 }
 
 .sq_mainbox {
