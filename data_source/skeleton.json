@@ -121,9 +121,16 @@
     ],
     "previous_conference": [
       {
-        "title": "Previous Conference Gallery | Infectious Diseases Conference | Past Events | Berlin Conferences | VVIC",
-        "content": "Explore the Previous Conference Gallery of the Infectious Diseases Conference. Browse through event highlights, keynote sessions, networking moments, and memorable experiences from past conferences. Relive the impactful discussions, research presentations, and collaborations that continue to shape advancements in HIV treatment and infectious disease healthcare.",
-        "meta_keywords": "Infectious Diseases previous conference gallery, HIV past events, Berlin conference highlights, VVIC gallery, past HIV research conference photos, infectious disease conference images, HIV conference memories, previous infectious conferences, global health event gallery, Berlin medical conference photos"
+        "title": "Previous Conferences | Infectious Diseases 2025 | Global Infectious Diseases Events Geneva",
+        "content": "Explore highlights from previous editions of the Infectious Diseases Conference, featuring global experts, innovative research in virology, epidemiology, and infection prevention. Discover how past events paved the way for the upcoming Infectious Diseases 2025 in Geneva, Switzerland.",
+        "meta_keywords": "infectious diseases conference 2025, previous infectious diseases conferences, global health summit, infection prevention, virology, epidemiology, bacteriology, antimicrobial resistance, infectious disease research, Geneva scientific events"
+      }
+    ],
+    "galleryEvent": [
+      {
+        "title": "Event Gallery | Infectious Diseases 2025 | Scientific Sessions & Networking in Geneva",
+        "content": "Browse the event gallery of Infectious Diseases 2025 to relive key moments from scientific sessions, keynote talks, and networking events. Experience the vibrant atmosphere of our international infectious diseases conference in Geneva, Switzerland.",
+        "meta_keywords": "infectious diseases event gallery, conference photos, infectious diseases summit 2025, Geneva scientific conference, healthcare networking, microbiology sessions, global infection research, public health conference, medical symposium"
       }
     ]
   },
@@ -138,7 +145,13 @@
     },
     {
       "title": "Previous Conference",
-      "link": "/previous-conference"
+      "link": "/previous-conference",
+      "subItems": [
+        {
+          "title": "2025 Conference Report",
+          "link": "/previous-conference"
+        }
+      ]
     },
     {
       "title": "Guidelines",
