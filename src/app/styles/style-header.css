@@ -950,7 +950,7 @@ li {
 }
 
 .main-menu .navigation>li>ul>li:hover>a {
-	background: var(--third-color);
+	background: var(--secondary-color);
 }
 
 .members-main-block {
@@ -10772,7 +10772,7 @@ input[text]:focus {
 }
 
 .about-conf-section .overview-content-block .overview-heading {
-	color: var(--third-color);
+	color: var(--secondary-color);
 	font-size: 44px;
 	font-weight: 600;
 	/* font-family: 'Bree Serif', serif; */
